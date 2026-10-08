@@ -12,12 +12,18 @@
 
     <style>
         body {
-            background-image: url(".../wpp.jpg");
+            background-image: url("{{ url_for('static', filename='wpp.jpg') }}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             min-height: 100vh;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px 0;
         }
     </style>
 </head>
